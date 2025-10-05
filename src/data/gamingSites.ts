@@ -132,8 +132,8 @@ export const gamingSites: GamingSite[] = [
     ],
     websiteUrl: "https://www.epicgames.com/store",
     screenshots: [
-      "/screenshots/steam-store-interface.jpg",
-      "/screenshots/steam-screenshot-2.jpg",
+      "/screenshots/epic-store-interface.jpg",
+      "/screenshots/epic-screenshot-2.jpg",
     ],
     featured: true,
     keyFeatures: [
@@ -282,8 +282,8 @@ export const gamingSites: GamingSite[] = [
     ],
     websiteUrl: "https://www.xbox.com/game-pass",
     screenshots: [
-      "/screenshots/steam-store-interface.jpg",
-      "/screenshots/steam-screenshot-2.jpg",
+      "/screenshots/xbox-store-interface.jpg",
+      "/screenshots/xbox-screenshot-2.jpg",
     ],
     featured: true,
     keyFeatures: [
