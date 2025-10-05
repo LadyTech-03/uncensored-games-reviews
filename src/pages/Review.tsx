@@ -148,6 +148,27 @@ const Review = () => {
             <ProsCons pros={site.pros} cons={site.cons} />
           </div>
 
+          {/* 2 Screenshots section */}
+            {site.screenshots.length > 0 && (
+            <Card className="mb-8">
+              <CardContent className="pt-6">
+                <h2 className="text-2xl font-bold text-foreground mb-4">Screenshots</h2>
+                <div className="grid md:grid-cols-2 gap-4">
+                  {site.screenshots.map((screenshot, index) => (
+                    <img
+                      key={index}
+                      src={screenshot || "/placeholder.svg"}
+                      alt={`${site.name} screenshot ${index + 1}`}
+                      width={600}
+                      height={400}
+                      className="rounded-lg border"
+                    />
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          )}
+
           {/* Performance Ratings */}
           <Card>
             <CardContent className="pt-6">
@@ -257,30 +278,23 @@ const Review = () => {
               <p className="text-base text-foreground leading-relaxed mb-6">
                 {site.finalVerdict}
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <a 
-                  href={site.websiteUrl} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="flex-1"
-                >
-                  <Button size="lg" className="font-bold w-full">
-                    Visit {site.name} Now
-                    <ExternalLink className="ml-2 h-5 w-5" />
-                  </Button>
+            </CardContent>
+          </Card>
+
+          {/* Ready to try section */}
+          <Card className="bg-primary text-primary-foreground">
+            <CardContent className="pt-6 text-center">
+              <h2 className="text-2xl font-bold mb-4">Ready to try {site.name}?</h2>
+              <Button size="lg" variant="secondary" asChild>
+                <a href={site.websiteUrl} target="_blank" rel="noopener noreferrer">
+                  Visit {site.name}
+                  <ExternalLink className="ml-2 h-4 w-4" />
                 </a>
-                <Button 
-                  size="lg" 
-                  variant="outline" 
-                  className="font-bold"
-                  onClick={() => window.history.back()}
-                >
-                  Back to Reviews
-                </Button>
-              </div>
+              </Button>
             </CardContent>
           </Card>
         </div>
+
       </section>
 
       {/* Footer */}

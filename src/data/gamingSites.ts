@@ -56,7 +56,10 @@ export const gamingSites: GamingSite[] = [
       "Regional pricing inconsistencies"
     ],
     websiteUrl: "https://store.steampowered.com",
-    screenshots: [],
+    screenshots: [
+      "/screenshots/steam-store-interface.jpg",
+      "/screenshots/steam-screenshot-2.jpg",
+    ],
     featured: true,
     keyFeatures: [
       {
@@ -128,7 +131,10 @@ export const gamingSites: GamingSite[] = [
       "Limited social features"
     ],
     websiteUrl: "https://www.epicgames.com/store",
-    screenshots: [],
+    screenshots: [
+      "/screenshots/steam-store-interface.jpg",
+      "/screenshots/steam-screenshot-2.jpg",
+    ],
     featured: true,
     keyFeatures: [
       {
@@ -200,7 +206,10 @@ export const gamingSites: GamingSite[] = [
       "Limited streaming options"
     ],
     websiteUrl: "https://www.gog.com",
-    screenshots: [],
+    screenshots: [
+      "/screenshots/steam-store-interface.jpg",
+      "/screenshots/steam-screenshot-2.jpg",
+    ],
     featured: false,
     keyFeatures: [
       {
@@ -272,7 +281,10 @@ export const gamingSites: GamingSite[] = [
       "Not all games support cloud play"
     ],
     websiteUrl: "https://www.xbox.com/game-pass",
-    screenshots: [],
+    screenshots: [
+      "/screenshots/steam-store-interface.jpg",
+      "/screenshots/steam-screenshot-2.jpg",
+    ],
     featured: true,
     keyFeatures: [
       {
@@ -344,7 +356,10 @@ export const gamingSites: GamingSite[] = [
       "Download sizes can be large"
     ],
     websiteUrl: "https://www.playstation.com/ps-plus",
-    screenshots: [],
+    screenshots: [
+      "/screenshots/steam-store-interface.jpg",
+      "/screenshots/steam-screenshot-2.jpg",
+    ],
     featured: false,
     keyFeatures: [
       {
@@ -416,7 +431,10 @@ export const gamingSites: GamingSite[] = [
       "Smaller retro game library than hoped"
     ],
     websiteUrl: "https://www.nintendo.com/switch/online",
-    screenshots: [],
+    screenshots: [
+      "/screenshots/steam-store-interface.jpg",
+      "/screenshots/steam-screenshot-2.jpg",
+    ],
     featured: false,
     keyFeatures: [
       {
@@ -488,7 +506,10 @@ export const gamingSites: GamingSite[] = [
       "Choice games lock after selection"
     ],
     websiteUrl: "https://www.humblebundle.com",
-    screenshots: [],
+    screenshots: [
+      "/screenshots/steam-store-interface.jpg",
+      "/screenshots/steam-screenshot-2.jpg",
+    ],
     featured: false,
     keyFeatures: [
       {
@@ -560,7 +581,10 @@ export const gamingSites: GamingSite[] = [
       "Limited AAA or mainstream games"
     ],
     websiteUrl: "https://itch.io",
-    screenshots: [],
+    screenshots: [
+      "/screenshots/steam-store-interface.jpg",
+      "/screenshots/steam-screenshot-2.jpg",
+    ],
     featured: false,
     keyFeatures: [
       {
@@ -609,7 +633,7 @@ export const gamingSites: GamingSite[] = [
       "Experimental game fans"
     ],
     finalVerdict: "itch.io is essential for anyone interested in indie games, experimental projects, or game development. The platform's open nature means quality varies wildly—you'll find everything from masterpieces to barely playable prototypes. But that's the point: itch.io is where creativity runs wild, where developers experiment without commercial pressure, and where you can discover truly unique games that would never exist on mainstream platforms. For adventurous gamers willing to dig through rough gems, itch.io is a treasure trove. For developers, it's the most creator-friendly platform in existence."
-  }
+  },
 ];
 
 export const getFeaturedSites = () => gamingSites.filter(site => site.featured);
